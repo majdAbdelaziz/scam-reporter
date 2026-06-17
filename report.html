@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أبلغ عن احتيال | مُبلِّغ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🚨</div>مُبلِّغ</a>
+      <div class="nav-links">
+        <a href="feed.html">البلاغات</a>
+        <a href="dictionary.html">قاموس الفخاخ</a>
+        <a href="blog/index.html">المدونة</a>
+        <a href="about.html">من نحن</a>
+        <a href="report.html" class="btn-red" style="padding:8px 18px; font-size:0.85rem;">بلّغ الآن</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="feed.html">البلاغات</a><a href="dictionary.html">قاموس الفخاخ</a>
+      <a href="blog/index.html">المدونة</a><a href="about.html">من نحن</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="section-eyebrow">أبلغ الآن</div>
+    <h1>بلاغك يصنع الفرق</h1>
+    <p>هويتك مجهولة تماماً. لا حاجة لتسجيل. بلاغك يُنشر خلال دقائق بعد التحقق.</p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="report-layout">
+        <div class="report-info">
+          <div class="section-eyebrow">لماذا تُبلِّغ؟</div>
+          <h2>كل بلاغ<br>ينقذ شخصاً</h2>
+          <p>عندما تشارك تجربتك، تُضيف معلومة حقيقية لقاعدة بيانات مجتمعية يستخدمها آلاف الناس كل يوم للتحقق قبل أي استثمار.</p>
+          <div class="trust-list">
+            <div class="trust-row">
+              <div class="trust-icon">🔒</div>
+              <span>هويتك مجهولة بالكامل — لا نجمع أي بيانات شخصية</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-icon">⚡</div>
+              <span>ينشر خلال دقائق بعد التحقق الآلي</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-icon">🌐</div>
+              <span>يُرسل تلقائياً للجهات الرقابية المختصة</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-icon">👥</div>
+              <span>يُعزَّز بشهادات مستخدمين آخرين مروا بنفس التجربة</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-icon">🛡️</div>
+              <span>يُضاف لقاعدة البيانات المجتمعية المفتوحة</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-box">
+          <form id="reportForm">
+            <div class="form-group">
+              <label>نوع الاحتيال</label>
+              <div class="type-tags">
+                <span class="type-tag active">منصة وهمية</span>
+                <span class="type-tag">مجموعة واتساب / تيليغرام</span>
+                <span class="type-tag">انتحال هوية</span>
+                <span class="type-tag">عملة وهمية</span>
+                <span class="type-tag">روبوت تداول</span>
+                <span class="type-tag">رسوم سحب مصطنعة</span>
+                <span class="type-tag">موقع مزيف</span>
+                <span class="type-tag">أخرى</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>اسم المنصة أو الرابط</label>
+              <input type="text" placeholder="مثال: fastcrypto-vip.com أو اسم المجموعة" />
+            </div>
+            <div class="form-group">
+              <label>ماذا حدث بالضبط؟</label>
+              <textarea placeholder="اشرح ما جرى — كلما كانت التفاصيل أكثر، كان البلاغ أقوى..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>المبلغ المفقود (اختياري)</label>
+              <input type="text" placeholder="مثال: 500 دولار" />
+            </div>
+            <div class="form-group">
+              <label>الدولة</label>
+              <select>
+                <option value="">اختر دولتك</option>
+                <option>فلسطين</option>
+                <option>الأردن</option>
+                <option>السعودية</option>
+                <option>الإمارات</option>
+                <option>مصر</option>
+                <option>الكويت</option>
+                <option>البحرين</option>
+                <option>قطر</option>
+                <option>المغرب</option>
+                <option>تونس</option>
+                <option>الجزائر</option>
+                <option>ليبيا</option>
+                <option>العراق</option>
+                <option>سوريا</option>
+                <option>لبنان</option>
+                <option>اليمن</option>
+                <option>أخرى</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-red submit-btn" style="width:100%; justify-content:center; padding:14px;">
+              🚨 إرسال البلاغ
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">🚨</div>مُبلِّغ</div><p>شبكة الحماية المجتمعية من الاحتيال المالي الرقمي</p></div>
+      <div class="footer-col"><h4>الموقع</h4><a href="feed.html">البلاغات</a><a href="report.html">أبلغ الآن</a><a href="dictionary.html">قاموس الفخاخ</a></div>
+      <div class="footer-col"><h4>المدونة</h4><a href="blog/index.html">كل المقالات</a></div>
+      <div class="footer-col"><h4>المشروع</h4><a href="../index.html">وعي المستثمر</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 مشروع الحماية الرقمية.</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

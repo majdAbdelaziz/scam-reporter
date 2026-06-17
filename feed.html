@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>البلاغات الحية | مُبلِّغ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><div class="logo-icon">🚨</div>مُبلِّغ</a>
+      <div class="nav-links">
+        <a href="feed.html">البلاغات</a><a href="dictionary.html">قاموس الفخاخ</a>
+        <a href="blog/index.html">المدونة</a><a href="about.html">من نحن</a>
+        <a href="report.html" class="btn-red" style="padding:8px 18px; font-size:0.85rem;">بلّغ الآن</a>
+      </div>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="feed.html">البلاغات</a><a href="dictionary.html">قاموس الفخاخ</a>
+      <a href="blog/index.html">المدونة</a><a href="report.html">بلّغ الآن</a>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="live-badge" style="margin:0 auto 16px; width:fit-content;">
+      <div class="live-dot"></div>
+      رصد مباشر
+    </div>
+    <h1>البلاغات الحية</h1>
+    <p>آخر حالات الاحتيال المرصودة والمؤكدة من مجتمع مُبلِّغ</p>
+  </div>
+
+  <!-- FILTERS -->
+  <div style="background: #fff; border-bottom: 1px solid var(--border); padding: 16px 0; position: sticky; top: 64px; z-index: 10;">
+    <div class="container">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
+        <span style="font-size:0.8rem; font-weight:600; color:var(--muted);">تصفية:</span>
+        <button class="type-tag active" onclick="filterFeed(this,'all')">الكل</button>
+        <button class="type-tag" onclick="filterFeed(this,'danger')">مؤكد</button>
+        <button class="type-tag" onclick="filterFeed(this,'warn')">قيد التحقق</button>
+        <button class="type-tag" onclick="filterFeed(this,'check')">جديد</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="feed-grid" id="feedGrid">
+
+        <div class="report-card" data-type="danger">
+          <div class="report-card-header"><span class="badge danger">احتيال مؤكد</span></div>
+          <h3>منصة "FastCryptoVIP" — رسوم سحب مصطنعة</h3>
+          <p>بعد إيداع المستخدمين مبالغ ضخمة، تطلب المنصة دفع "رسوم تحقق" قبل أي سحب. الأموال لا تُسترد وتختفي الاستجابة تماماً.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٤٧ تأكيد</span><span class="time-loc">الكويت · ١٢ دقيقة</span></div>
+        </div>
+
+        <div class="report-card" data-type="danger">
+          <div class="report-card-header"><span class="badge danger">احتيال مؤكد</span></div>
+          <h3>انتحال هوية مستشار مالي على إنستغرام</h3>
+          <p>حساب مزيف يستخدم صوراً ومقاطع مسروقة من شخصية معروفة للترويج لعملة رقمية وهمية مع وعود بأرباح خيالية.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٩١ تأكيد</span><span class="time-loc">السعودية · ساعة</span></div>
+        </div>
+
+        <div class="report-card" data-type="warn">
+          <div class="report-card-header"><span class="badge warn">قيد التحقق</span></div>
+          <h3>مجموعة تيليغرام — "ربح ١٥٪ أسبوعياً مضمون"</h3>
+          <p>تستهدف المبتدئين وتطلب "تحويلاً تجريبياً" للانضمام للمجموعة الحصرية. العرض ينتهي "الليلة فقط".</p>
+          <div class="report-card-footer"><span class="votes">↑ ٢٣ تأكيد</span><span class="time-loc">مصر · ٣٤ دقيقة</span></div>
+        </div>
+
+        <div class="report-card" data-type="warn">
+          <div class="report-card-header"><span class="badge warn">قيد التحقق</span></div>
+          <h3>موقع مزيف يستنسخ واجهة Binance</h3>
+          <p>الموقع مطابق للأصل بفارق حرف واحد في الرابط. يعترض بيانات تسجيل الدخول ويسرق الحسابات مباشرة.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٨ تأكيد</span><span class="time-loc">الأردن · ساعتان</span></div>
+        </div>
+
+        <div class="report-card" data-type="danger">
+          <div class="report-card-header"><span class="badge danger">احتيال مؤكد</span></div>
+          <h3>"شركة استرداد" تحتال على ضحايا الاحتيال</h3>
+          <p>يتصلون بضحايا سابقين ويدّعون قدرتهم على "استرداد الأموال" مقابل رسوم مقدمة — احتيال مضاعف على من فقدوا أموالهم.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٦٢ تأكيد</span><span class="time-loc">الإمارات · ٣ ساعات</span></div>
+        </div>
+
+        <div class="report-card" data-type="check">
+          <div class="report-card-header"><span class="badge check">جديد</span></div>
+          <h3>تطبيق "CryptoEasy" يطلب صلاحيات غير مبررة</h3>
+          <p>التطبيق يطلب الوصول للاتصالات والمواقع وجهات الاتصال دون أي مبرر وظيفي واضح.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٣ تأكيد</span><span class="time-loc">المغرب · ٤ ساعات</span></div>
+        </div>
+
+        <div class="report-card" data-type="danger">
+          <div class="report-card-header"><span class="badge danger">احتيال مؤكد</span></div>
+          <h3>مخطط بونزي متنكّر بـ"صندوق استثمار إسلامي"</h3>
+          <p>يدّعي الالتزام بأحكام الشريعة لكسب الثقة، والأرباح تأتي فقط من المستثمرين الجدد لا من نشاط حقيقي.</p>
+          <div class="report-card-footer"><span class="votes">↑ ١١٤ تأكيد</span><span class="time-loc">تونس · أمس</span></div>
+        </div>
+
+        <div class="report-card" data-type="warn">
+          <div class="report-card-header"><span class="badge warn">قيد التحقق</span></div>
+          <h3>إعلانات ممولة على فيسبوك تستخدم صور مشاهير بالذكاء الاصطناعي</h3>
+          <p>إعلانات تستخدم صوراً مزيّفة لشخصيات مشهورة مُنتجة بالذكاء الاصطناعي للترويج لمنصات وهمية.</p>
+          <div class="report-card-footer"><span class="votes">↑ ٣٤ تأكيد</span><span class="time-loc">لبنان · أمس</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align:center; padding: 0 0 60px; border-bottom: 1px solid var(--border);">
+    <a href="report.html" class="btn-red">🚨 أضف بلاغاً جديداً</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo"><div class="logo-icon">🚨</div>مُبلِّغ</div><p>شبكة الحماية المجتمعية</p></div>
+      <div class="footer-col"><h4>الموقع</h4><a href="feed.html">البلاغات</a><a href="report.html">أبلغ الآن</a><a href="dictionary.html">قاموس الفخاخ</a></div>
+      <div class="footer-col"><h4>المدونة</h4><a href="blog/index.html">كل المقالات</a></div>
+      <div class="footer-col"><h4>المشروع</h4><a href="../index.html">وعي المستثمر</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 مشروع الحماية الرقمية.</span></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function filterFeed(btn, type) {
+      document.querySelectorAll('.type-tag').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.report-card').forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مُبلِّغ — شبكة الحماية المجتمعية من الاحتيال</title>
+  <meta name="description" content="أول منصة عربية للإبلاغ المجتمعي عن الاحتيال المالي الرقمي. بلاغك يحمي الآخرين.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🚨</div>
+        مُبلِّغ
+      </a>
+      <div class="nav-links">
+        <a href="feed.html">البلاغات</a>
+        <a href="dictionary.html">قاموس الفخاخ</a>
+        <a href="blog/index.html">المدونة</a>
+        <a href="about.html">من نحن</a>
+        <a href="report.html" class="btn-red" style="padding:8px 18px; font-size:0.85rem;">بلّغ الآن</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="feed.html">البلاغات</a>
+      <a href="dictionary.html">قاموس الفخاخ</a>
+      <a href="blog/index.html">المدونة</a>
+      <a href="about.html">من نحن</a>
+      <a href="report.html">بلّغ الآن</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          رصد مباشر — 24 ساعة
+        </div>
+        <h1>صوتك يحمي <em>الآخرين</em><br>من الوقوع في الفخ</h1>
+        <p class="hero-sub">أول منصة عربية للإبلاغ المجتمعي عن الاحتيال المالي الرقمي. بلاغك الواحد قد يُنقذ مئات غيرك — قبل أن يفقدوا أموالهم.</p>
+        <div class="hero-actions">
+          <a href="report.html" class="btn-red">🚨 أبلغ عن احتيال</a>
+          <a href="feed.html" class="btn-outline">استعرض البلاغات</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong data-count="2847" data-suffix="">٢٬٨٤٧</strong>
+            <span>بلاغ مؤكد</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="341" data-suffix="">٣٤١</strong>
+            <span>منصة مشبوهة</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="18000" data-suffix="+">+١٨٬٠٠٠</strong>
+            <span>مستخدم يتابع</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Feed Card -->
+      <div class="hero-feed">
+        <div class="feed-topbar">
+          <div class="feed-topbar-title">
+            <div class="live-dot"></div>
+            آخر البلاغات
+          </div>
+          <span class="feed-live-chip">LIVE</span>
+        </div>
+        <div class="feed-items">
+          <div class="feed-item">
+            <div class="feed-item-header">
+              <span class="badge danger">احتيال مؤكد</span>
+              <span style="font-size:0.72rem; color:#888;">منذ ١٢ د</span>
+            </div>
+            <p>منصة "FastCryptoVIP" تطلب رسوم سحب لتحرير الأرباح — الأموال لا تُسترد</p>
+            <div class="feed-item-meta">
+              <span>↑ ٤٧ تأكيد</span>
+              <span>الكويت</span>
+            </div>
+          </div>
+          <div class="feed-item">
+            <div class="feed-item-header">
+              <span class="badge warn">قيد التحقق</span>
+              <span style="font-size:0.72rem; color:#888;">منذ ٣٤ د</span>
+            </div>
+            <p>مجموعة تيليغرام تعد بـ"ربح ١٥٪ أسبوعياً" — بدون ترخيص</p>
+            <div class="feed-item-meta">
+              <span>↑ ٢٣ تأكيد</span>
+              <span>مصر</span>
+            </div>
+          </div>
+          <div class="feed-item">
+            <div class="feed-item-header">
+              <span class="badge danger">احتيال مؤكد</span>
+              <span style="font-size:0.72rem; color:#888;">منذ ساعة</span>
+            </div>
+            <p>انتحال هوية مستشار مالي مشهور لترويج عملة وهمية على إنستغرام</p>
+            <div class="feed-item-meta">
+              <span>↑ ٩١ تأكيد</span>
+              <span>السعودية</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-block">
+        <div class="stat-num">١٣٧٬٠٠٠</div>
+        <div class="stat-label">عربي يزور مواقع احتيال مالي يومياً</div>
+        <div class="stat-source">Telecom Review Arabia</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">$١٧B</div>
+        <div class="stat-label">خسائر عالمية من احتيال العملات الرقمية في 2024</div>
+        <div class="stat-source">Chainalysis 2024</div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">١٬٣٠٠٪</div>
+        <div class="stat-label">ارتفاع في عمليات Deepfake الاحتيالية خلال 2024</div>
+        <div class="stat-source">تقرير سيبراني 2024</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-eyebrow">كيف يعمل مُبلِّغ</div>
+      <div class="section-title">من بلاغك إلى الحماية المجتمعية</div>
+      <p class="section-sub">أربع خطوات تحوّل تجربتك الشخصية إلى درع يحمي الجميع</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-ico ico-red">📋</div>
+          <h3>ترسل بلاغك</h3>
+          <p>صف ما حدث، حدّد نوع الاحتيال، وأرفق الأدلة إن وجدت</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-ico ico-amber">🔍</div>
+          <h3>التحقق الآلي</h3>
+          <p>الذكاء الاصطناعي يحلل البلاغ ويكشف مؤشرات الخطر تلقائياً</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-ico ico-blue">👥</div>
+          <h3>تصويت المجتمع</h3>
+          <p>المستخدمون يؤكدون البلاغ ويضيفون شهاداتهم لتعزيز الموثوقية</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <div class="step-ico ico-green">🛡️</div>
+          <h3>تحذير فوري</h3>
+          <p>البلاغ المؤكد ينشر لحماية الجميع ويُرسل للجهات الرقابية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST REPORTS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-eyebrow">التغذية الحية</div>
+      <div class="section-title">آخر البلاغات الواردة</div>
+      <div class="feed-grid">
+        <div class="report-card">
+          <div class="report-card-header">
+            <span class="badge danger">احتيال مؤكد</span>
+          </div>
+          <h3>منصة "FastCryptoVIP" تطلب رسوم سحب لتحرير الأرباح</h3>
+          <p>بعد إيداع المستخدمين، تطلب المنصة دفع "رسوم تحقق" قبل السحب — والأموال لا تُسترد أبداً.</p>
+          <div class="report-card-footer">
+            <span class="votes">↑ ٤٧ تأكيد</span>
+            <span class="time-loc">الكويت · منذ ١٢ دقيقة</span>
+          </div>
+        </div>
+        <div class="report-card">
+          <div class="report-card-header">
+            <span class="badge danger">احتيال مؤكد</span>
+          </div>
+          <h3>انتحال هوية مستشار مالي مشهور على إنستغرام</h3>
+          <p>حساب مزيف يستخدم صور وفيديوهات شخصية معروفة للترويج لعملة رقمية وهمية.</p>
+          <div class="report-card-footer">
+            <span class="votes">↑ ٩١ تأكيد</span>
+            <span class="time-loc">السعودية · منذ ساعة</span>
+          </div>
+        </div>
+        <div class="report-card">
+          <div class="report-card-header">
+            <span class="badge warn">قيد التحقق</span>
+          </div>
+          <h3>مجموعة تيليغرام تعد بأرباح ١٥٪ أسبوعياً بدون ترخيص</h3>
+          <p>تستهدف المبتدئين وتطلب "تحويلاً تجريبياً" للانضمام لـ"المجموعة الحصرية".</p>
+          <div class="report-card-footer">
+            <span class="votes">↑ ٢٣ تأكيد</span>
+            <span class="time-loc">مصر · منذ ٣٤ دقيقة</span>
+          </div>
+        </div>
+        <div class="report-card">
+          <div class="report-card-header">
+            <span class="badge warn">قيد التحقق</span>
+          </div>
+          <h3>موقع يستنسخ واجهة Binance بفارق حرف في الرابط</h3>
+          <p>الموقع المزيف يعترض بيانات تسجيل الدخول ويسرق الحسابات مباشرة.</p>
+          <div class="report-card-footer">
+            <span class="votes">↑ ٨ تأكيد</span>
+            <span class="time-loc">الأردن · منذ ساعتين</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <a href="feed.html" class="btn-outline">عرض كل البلاغات</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="section">
+    <div class="container">
+      <div class="section-eyebrow">أثرنا معاً</div>
+      <div class="section-title">ما حققناه حتى الآن</div>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-ico">📋</div>
+          <h3 data-count="2847">٢٬٨٤٧</h3>
+          <p>بلاغ مؤكد<br>منذ الإطلاق</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-ico">🚫</div>
+          <h3 data-count="341">٣٤١</h3>
+          <p>منصة مشبوهة<br>في قاعدة البيانات</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-ico">👥</div>
+          <h3 data-count="18000" data-suffix="+">+١٨٬٠٠٠</h3>
+          <p>مستخدم يتابع<br>التغذية الحية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background: #E24B4A; padding: 64px 28px; text-align: center;">
+    <div class="container">
+      <h2 style="font-size: clamp(1.5rem,2.5vw,2.2rem); font-weight:700; color:white; margin-bottom:12px; letter-spacing:-0.3px;">هل وقعت في فخ أو تشك في عرض؟</h2>
+      <p style="color:rgba(255,255,255,0.75); font-size:1rem; margin-bottom:28px; line-height:1.7;">بلاغك يصل للجهات المختصة ويحمي الآخرين. هويتك مجهولة تماماً.</p>
+      <a href="report.html" style="display:inline-flex; align-items:center; gap:8px; background:white; color:#E24B4A; font-weight:700; font-size:0.95rem; padding:13px 28px; border-radius:10px; transition: all 0.2s;">🚨 أبلغ الآن — مجاناً وبشكل مجهول</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo"><div class="logo-icon">🚨</div> مُبلِّغ</div>
+        <p>أول شبكة عربية للإبلاغ المجتمعي عن الاحتيال المالي الرقمي</p>
+        <a href="mailto:info@protection-ecosystem.com">info@protection-ecosystem.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>الموقع</h4>
+        <a href="feed.html">البلاغات الحية</a>
+        <a href="report.html">أبلغ عن احتيال</a>
+        <a href="dictionary.html">قاموس الفخاخ</a>
+        <a href="about.html">من نحن</a>
+      </div>
+      <div class="footer-col">
+        <h4>المدونة</h4>
+        <a href="blog/scam-tactics.html">أساليب الاحتيال</a>
+        <a href="blog/psychology.html">علم النفس</a>
+        <a href="blog/crypto-basics.html">العملات الرقمية</a>
+        <a href="blog/index.html">كل المقالات</a>
+      </div>
+      <div class="footer-col">
+        <h4>المشروع</h4>
+        <a href="../index.html">وعي المستثمر</a>
+        <a href="../tools.html">أدوات الفحص</a>
+        <a href="../quiz.html">اختبر نفسك</a>
+        <a href="../learn.html">الأكاديمية</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 مشروع الحماية الرقمية. جميع الحقوق محفوظة.</span>
+      <span>جزء من شبكة وعي المستثمر الصغير</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
